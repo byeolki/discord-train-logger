@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "discord-train-logger"
+version = "0.1.0"
+description = "Discord webhook notifications for ML training jobs"
+authors = []
+readme = "README.md"
+packages = [{include = "discord_train_logger"}]
+license = "MIT"
+keywords = ["discord", "webhook", "logging", "machine-learning", "training"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.28.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+black = "^23.0.0"
+ruff = "^0.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100
+
+[tool.ruff]
+line-length = 100
